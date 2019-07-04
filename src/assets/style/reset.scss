@@ -1,0 +1,64 @@
+/* 样式重置及公共样式 */
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix:after {
+  content: '.';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  overflow: hidden;
+}
+.highlight{
+  color: var(--primary);
+}
+
+::-moz-placeholder {
+  color: var(--text-light);
+}
+:-ms-input-placeholder {
+  color: var(--text-light);
+}
+::-webkit-input-placeholder {
+  color: var(--text-light);
+}
+::focus {
+  outline-color: var(--primary)!important;
+}
+::selection {
+  background: var(--primary);
+}
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+  margin: 0;
+  padding: 0
+}
+body, button, input, select, textarea {
+  font: 12px "microsoft yahei";
+  line-height: 1.5;
+  -ms-overflow-style: scrollbar;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+ul, ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  cursor:pointer
+}
+img {
+  border: 0;
+}
+button, input, select, textarea {
+  font-size: 100%
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}

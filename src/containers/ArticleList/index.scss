@@ -1,0 +1,41 @@
+@import '../../assets/style/base.scss';
+
+.article-list-container {
+  .list-content {
+    overflow: hidden;
+    .list-date {
+      width: px2rem(160);
+      line-height: px2rem(32);
+      margin: px2rem(10);
+      margin-top: 0;
+      color: var(--bg-lighter);
+      font-size: px2rem(16);
+      font-weight: bold;
+      text-align: center;
+      border-radius: px2rem(16);
+      background: var(--primary-light);
+    }
+    .article-list {
+      .article {
+        display: flex;
+        margin: px2rem(10) 0;
+        padding: px2rem(10);
+        background: var(--bg-lighter);
+        box-shadow: 0 3px 10px 0 rgba(91, 115, 146, 0.15);
+        img {
+          width: px2rem(80);
+          height: px2rem(80);
+          object-fit: cover;
+        }
+        .article-info {
+          flex: 1;
+          margin-left: px2rem(20);
+          font-weight: 600;
+          font-size: px2rem(14);
+          margin-top: 1px;
+          color: var(--text);
+        }
+      }
+    }
+  }
+}

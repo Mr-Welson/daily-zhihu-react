@@ -1,0 +1,4 @@
+// 组件样式主入口，包含颜色，样式重置，组件样式
+// 在 App.js 里引入
+@import './theme/light.scss';
+@import './reset.scss';

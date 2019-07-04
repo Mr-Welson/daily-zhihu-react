@@ -1,0 +1,24 @@
+@import '../../assets/style/base.scss';
+.banner-container {
+  width: 100%;
+  height: px2rem(300);
+  margin-bottom: px2rem(10);
+  .banner-item {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    .item-title {
+      color: var(--primary);
+      font-size: 16px;
+      position: absolute;
+      bottom: 10%;
+      right: 0;
+      padding: 10px;
+    }
+  }
+}

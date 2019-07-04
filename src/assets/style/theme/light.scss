@@ -1,0 +1,55 @@
+.theme-light {
+
+  /* 主色 */
+  --primary: #ffaa00;
+  --primary-light: #ffcc22;
+  --primary-dark: #ff8800;
+
+  /* 辅助色 */
+  --error: #ff4466;
+  --error-dark: #ff2244;
+ 
+  --info: #44AAFF;
+  --info-dark: #2299ff;
+  --info-spcial: #5987CF;
+
+  --success: #25dc9b;
+  --success-light: #50e9b2;
+  --success-dark: #0fc484;
+
+  /* 字体颜色 */
+  --text-dark: #333;
+  --text: #666;
+  --text-light: #999;
+  --text-tab-active: #000;
+  --link: #44aaff;
+  --text-hover: var(--primary);
+  --text-active: var(--primary);
+
+  /* 灰色：深色用于边框 */
+  --bd-dark: #8d96a9;
+  --bd: #a7aebc;
+  --bd-light: #b5bbc7;
+
+  /* 灰色：浅灰色用于背景 */
+  --bg-dark: #d8dce3;
+  --bg: #eaedf1;
+  --bg-input:#fff;//总览专用
+  --bg-light: #f3f6f9;
+  --bg-lighter: #fff;
+
+  /* icon */
+  --icon: #8899bb;
+  --icon-disabled: #cad2e0;
+
+  
+  /* 禁用 */
+  --disabled: #999;
+
+  /* 阴影 */
+  --input-shadow: 0 0 0 2px #ffaa00;
+  --input-shadow-error: 0 0 0 2px #ff4466;
+  --slider-shadow: 0 0 0 4px #ffaa00;
+  --card-shadow-color:rgba(0,0,0,.1);
+  
+}

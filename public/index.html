@@ -2,8 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="referrer" content="never">
+		<!--忽略电话号码和email识别-->
+		<meta name="format-detection" content="telephone=no"/>
+		<meta name="format-detection" content="email=no"/>
+		<!--当网站添加到主屏幕快速启动方式，将网站添加到主屏幕快速启动方式-->
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		<!--隐藏ios上的浏览器地址栏-->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+		<!-- UC默认竖屏 ，UC强制全屏 -->
+		<meta name="full-screen" content="yes">
+		<meta name="browsermode" content="application">
+		<!-- QQ强制竖屏 QQ强制全屏 -->
+		<meta name="x5-orientation" content="portrait">
+		<meta name="x5-fullscreen" content="true">
+		<meta name="x5-page-mode" content="app">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -19,9 +34,10 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>知乎日报</title>
+    <script src='./libs/flexible.js'></script>
   </head>
-  <body>
+  <body class='theme-light'>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
