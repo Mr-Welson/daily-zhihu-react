@@ -1,29 +1,24 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Swiper from '../../components/Swiper';
+import ImgMask from '../../components/Mask';
 
 import './index.scss';
 
-const BannerList = ({ data, goDetail }) => {
+const BannerList = ({ data }) => {
   return (
     <Swiper list={data} className='banner-container'>
-      {(props) => (
-        <ListItem
-          {...props}
-          goDetail={goDetail}
-        />
+      {({item}) => (
+        <Link to={`/article/${item.id}`}>
+          <div className='banner-item'>
+            <img src={item.image} alt=""/>
+            <span className='item-title'>{item.title}</span>
+            <ImgMask />
+          </div>
+        </Link>
       )}
     </Swiper>
   )
 }
-
-const ListItem = ({ item, goDetail }) => (
-  <div
-    className='banner-item'
-    onClick={() => goDetail(item.id)}
-  >
-    <img src={item.image} alt=""/>
-    <span className='item-title'>{item.title}</span>
-  </div>
-)
 
 export default BannerList;

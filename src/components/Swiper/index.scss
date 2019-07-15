@@ -1,3 +1,5 @@
+@import '../../assets/style/base.scss';
+
 .swiper-container {
   position: relative;
   .swiper-content {
@@ -22,17 +24,17 @@
     position: absolute;
     z-index: 99;
     width: 100%;
-    bottom: 10px;
+    bottom: px2rem(10);
     margin: 0 auto;
     text-align: center;
     .swiper-pagination-dot {
-      width: 8px;
-      height: 8px;
+      width: px2rem(10);
+      height: px2rem(10);
       display: inline-block;
       border-radius: 100%;
-      background: #000;
-      opacity: .2;
-      margin: 0 4px;
+      background: #fff;
+      opacity: .6;
+      margin: 0 px2rem(4);
     }
     .swiper-pagination-dot-active {
       opacity: 1;

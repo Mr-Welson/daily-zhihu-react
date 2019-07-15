@@ -1,7 +1,7 @@
-import articleServer from './article';
+import article from './article';
 
 const Service = {
-  articleServer,
+  article,
 }
 
 export default Service

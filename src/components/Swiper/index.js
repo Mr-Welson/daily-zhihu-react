@@ -2,17 +2,19 @@ import React, { useState, useEffect } from 'react';
 import './index.scss'
 ;
 
+let timer;
 const Swiper = ({
   className='', list, time=3000, current=0, children, ...rest
 }) => {
   const [active, setActive] = useState(current);
+  const [timerId, setTimerId] = useState();
   const length = list.length;
   useEffect(() => {
-    const timer = setInterval(() => {
+    timer = setInterval(() => {
       setActive(c => (c + 1) % length)
     }, time);
     return () => clearTimeout(timer)
-  }, [time, length])
+  }, [time, length, timerId]);
   return (
     <div className={'swiper-container ' + className} {...rest}>
       <div className='swiper-content'>
@@ -37,6 +39,8 @@ const Swiper = ({
               `}
               onClick={(e) => {
                 e.stopPropagation();
+                clearTimeout(timer)
+                setTimerId(Math.random());
                 setActive(k)
               }}
             />

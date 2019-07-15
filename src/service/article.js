@@ -9,7 +9,6 @@ class articleServer {
   // YYYYMMDD
   articleBeforeDate(date) {
     return axios.get(apiZhuHu.article.replace('<date>', date))
-
   }
 
   // 
