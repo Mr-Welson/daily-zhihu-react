@@ -5,10 +5,19 @@ html, body {
 #root {
   width: 100%;
   height: 100%;
+  max-width: 640px;
+  margin: 0 auto;
   background: var(--bg);
 }
 .app-container {
   width: 100%;
   height: 100%;
   overflow-y: auto;
+}
+.no-data {
+  text-align: center;
+  margin: 50px auto;
+  p {
+    font-size: 0.5rem;
+  }
 }
