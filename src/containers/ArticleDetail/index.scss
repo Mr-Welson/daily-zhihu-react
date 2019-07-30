@@ -1,6 +1,8 @@
 @import '../../assets/style/base.scss';
 
 .detail-container {
+  overflow: auto;
+  height: 100%;
   .detail-header{
     width: 100%;
     height: px2rem(300);

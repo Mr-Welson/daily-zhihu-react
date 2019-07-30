@@ -12,12 +12,13 @@ const ArticleDetail = lazy(() => import('./containers/ArticleDetail'));
 // 如果在父组件渲染完成后，子组件（懒加载）的模块还没有被加载完成，我们可以使用 Suspense 加载指示器为此组件做优雅降级。
 
 const AppRouter = () => (
-  <Router>
+  <Router basename="/daily-zhihu-react">
     <Suspense fallback={<div>Loading...</div>}>
         <Route
           path='/'
           render={props => {
             let style = { display: 'block' };
+            console.log(props);
             if(props.location.pathname !== '/') {
               style.display = 'none'
             }

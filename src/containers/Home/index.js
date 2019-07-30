@@ -88,9 +88,9 @@ const Home = ({ style }) => {
       </div> 
       }
       {loadMore && (
-        <div class="loadmore-wrapper">
-          <div class="loadmore-container">
-            <div class="loadmore-img"></div>
+        <div className="loadmore-wrapper">
+          <div className="loadmore-container">
+            <div className="loadmore-img"></div>
             <span>下滑查看更多</span>
           </div>
         </div>
