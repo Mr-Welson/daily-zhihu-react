@@ -3,13 +3,16 @@ import Service from "../../service";
 import { formatDate, getLastDate } from "../../utils";
 import Banner from "../Banner";
 import ArticleList from "../ArticleList";
-import svgNoData from '../../assets/images/nodata.svg';
-import Arrow from '../../components/Arrow';
+import svgNoData from "../../assets/images/nodata.svg";
+import Arrow from "../../components/Arrow";
+import Loading from "../../components/Loading";
+
 import "./index.scss";
 
 let lastDate = formatDate(new Date());
 
 const Home = ({ style }) => {
+  const [loading, setLoading] = useState(true);
   const [bannerList, setBannerList] = useState([]);
   const [articleList, setArticleList] = useState({});
   const [loadMore, setLoadMore] = useState(false);
@@ -19,6 +22,7 @@ const Home = ({ style }) => {
       .latest()
       .then(result => {
         const { date, stories, top_stories } = result.data;
+        setLoading(false);
         setBannerList(top_stories);
         setArticleList([{ date, stories }]);
       })
@@ -81,20 +85,29 @@ const Home = ({ style }) => {
 
   return (
     <div className="app-container" ref={appContainer} style={style}>
-      <Banner data={bannerList} />
-      {!!articleList.length ? <ArticleList data={articleList} /> : 
-      <div className='no-data'>
-        <img src={svgNoData} alt=''/>
-        <p>暂无数据</p>
-      </div> 
-      }
-      {(
-        <div className="loadmore-wrapper" style={{display: loadMore ? 'block' : 'none'}}>
-          <div className="loadmore-container">
-            <Arrow />
-            <span>下滑查看更多</span>
+      {loading ? (
+        <Loading />
+      ) : (
+        <>
+          <Banner data={bannerList} />
+          {!!articleList.length ? (
+            <ArticleList data={articleList} />
+          ) : (
+            <div className="no-data">
+              <img src={svgNoData} alt="" />
+              <p>暂无数据</p>
+            </div>
+          )}
+          <div
+            className="loadmore-wrapper"
+            style={{ display: loadMore ? "block" : "none" }}
+          >
+            <div className="loadmore-container">
+              <Arrow />
+              <span>下滑查看更多</span>
+            </div>
           </div>
-        </div>
+        </>
       )}
     </div>
   );
