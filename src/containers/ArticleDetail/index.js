@@ -2,7 +2,12 @@ import React, { useState, useEffect } from 'react';
 import Service from '../../service';
 import ImgMask from '../../components/Mask';
 import Loading from '../../components/Loading';
+import Arrow from '../../components/Arrow';
 import './index.scss';
+
+function goBack() {
+  window.history.back();
+}
 
 const ArticleDetail = (props) => {
   const id = props.match.params.id;
@@ -40,6 +45,9 @@ const ArticleDetail = (props) => {
   }
   return (
     <div className='detail-container'>
+      <div className='go-back-container'>
+        <Arrow className='go-back' onClick={goBack}/>
+      </div>
       <div className='detail-header'>
         <h1 className='detail-title'>
           {headData.title}

@@ -4,6 +4,7 @@ import { formatDate, getLastDate } from "../../utils";
 import Banner from "../Banner";
 import ArticleList from "../ArticleList";
 import svgNoData from '../../assets/images/nodata.svg';
+import Arrow from '../../components/Arrow';
 import "./index.scss";
 
 let lastDate = formatDate(new Date());
@@ -87,10 +88,10 @@ const Home = ({ style }) => {
         <p>暂无数据</p>
       </div> 
       }
-      {loadMore && (
-        <div className="loadmore-wrapper">
+      {(
+        <div className="loadmore-wrapper" style={{display: loadMore ? 'block' : 'none'}}>
           <div className="loadmore-container">
-            <div className="loadmore-img"></div>
+            <Arrow />
             <span>下滑查看更多</span>
           </div>
         </div>
