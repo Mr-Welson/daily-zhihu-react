@@ -8,6 +8,7 @@ html, body {
   max-width: 640px;
   margin: 0 auto;
   background: var(--bg);
+  overflow: hidden;
 }
 .app-container {
   width: 100%;

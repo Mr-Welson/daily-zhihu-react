@@ -1,5 +1,6 @@
 {
-  "name": "daily-zhuhu-react",
+  "name": "daily-zhihu-react",
+  "homepage" : "https://mr-welson.github.io/daily-zhihu",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

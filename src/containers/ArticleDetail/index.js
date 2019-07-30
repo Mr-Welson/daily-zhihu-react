@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Service from '../../service';
 import ImgMask from '../../components/Mask';
+import Loading from '../../components/Loading';
 import './index.scss';
 
 const ArticleDetail = (props) => {
@@ -35,7 +36,7 @@ const ArticleDetail = (props) => {
     return () => styleLink.href = ''
   }, [id]);
   if(loading) {
-    return 'loading...'
+    return <Loading loading={loading} />
   }
   return (
     <div className='detail-container'>
