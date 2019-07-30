@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "855e08d2c42f39e9ea0389a35d287fe2",
+    "revision": "3ce8f7be39c18bd8bda95a4439b988f5",
     "url": "/daily-zhihu-react/index.html"
   },
   {
-    "revision": "4322247a6b66b6120bcb",
-    "url": "/daily-zhihu-react/static/css/3.30fc13f9.chunk.css"
+    "revision": "5d65a4ac2db1a0e6fe31",
+    "url": "/daily-zhihu-react/static/css/3.07ceda95.chunk.css"
   },
   {
     "revision": "90a72a691188bcecf9cc",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/daily-zhihu-react/static/js/2.22b5cc16.chunk.js"
   },
   {
-    "revision": "4322247a6b66b6120bcb",
+    "revision": "5d65a4ac2db1a0e6fe31",
     "url": "/daily-zhihu-react/static/js/3.b52ef1aa.chunk.js"
   },
   {
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/daily-zhihu-react/static/js/main.22512cb4.chunk.js"
   },
   {
-    "revision": "22dd9715643f5b048e46",
-    "url": "/daily-zhihu-react/static/js/runtime~main.3d372b3a.js"
+    "revision": "3f84ffe1da5ec8f927d7",
+    "url": "/daily-zhihu-react/static/js/runtime~main.440152e9.js"
   },
   {
     "revision": "2d902be2d89f57af16bb5063c23188b7",

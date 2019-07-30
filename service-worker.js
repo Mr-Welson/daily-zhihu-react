@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/daily-zhihu-react/precache-manifest.22ac81a9e17b9a46f91af2a69c4b51c4.js"
+  "/daily-zhihu-react/precache-manifest.5104ec1f0e220121b1019ba7142e828a.js"
 );
 
 self.addEventListener('message', (event) => {
