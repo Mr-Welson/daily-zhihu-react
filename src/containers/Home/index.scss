@@ -22,3 +22,22 @@ html, body {
     font-size: 0.5rem;
   }
 }
+
+.loadmore-container {
+  align-items: center;
+  color: #bebebe;
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  height: 30px;
+  justify-content: center;
+  margin: 10px auto;
+  width: 120px;
+  .loadmore-img {
+    background: url(http://p7.yx-s.com/d/inn/ce685d51/loadmore.png) center no-repeat;
+    background-size: 15px 15px;
+    height: 15px;
+    margin-right: 5px;
+    width: 15px;
+  }
+}

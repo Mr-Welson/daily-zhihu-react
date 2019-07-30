@@ -87,7 +87,14 @@ const Home = ({ style }) => {
         <p>暂无数据</p>
       </div> 
       }
-      {loadMore && "加载更多..."}
+      {loadMore && (
+        <div class="loadmore-wrapper">
+          <div class="loadmore-container">
+            <div class="loadmore-img"></div>
+            <span>下滑查看更多</span>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
