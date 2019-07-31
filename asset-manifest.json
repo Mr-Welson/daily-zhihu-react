@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/daily-zhihu-react/static/css/main.0010ebf5.chunk.css",
-    "main.js": "/daily-zhihu-react/static/js/main.61c61a4b.chunk.js",
-    "main.js.map": "/daily-zhihu-react/static/js/main.61c61a4b.chunk.js.map",
-    "runtime~main.js": "/daily-zhihu-react/static/js/runtime~main.8fb0f1eb.js",
-    "runtime~main.js.map": "/daily-zhihu-react/static/js/runtime~main.8fb0f1eb.js.map",
-    "static/js/2.ebe8d428.chunk.js": "/daily-zhihu-react/static/js/2.ebe8d428.chunk.js",
-    "static/js/2.ebe8d428.chunk.js.map": "/daily-zhihu-react/static/js/2.ebe8d428.chunk.js.map",
+    "main.css": "/daily-zhihu-react/static/css/main.adcb5402.chunk.css",
+    "main.js": "/daily-zhihu-react/static/js/main.ef712d66.chunk.js",
+    "main.js.map": "/daily-zhihu-react/static/js/main.ef712d66.chunk.js.map",
+    "runtime~main.js": "/daily-zhihu-react/static/js/runtime~main.74c53aac.js",
+    "runtime~main.js.map": "/daily-zhihu-react/static/js/runtime~main.74c53aac.js.map",
+    "static/js/2.bc47b986.chunk.js": "/daily-zhihu-react/static/js/2.bc47b986.chunk.js",
+    "static/js/2.bc47b986.chunk.js.map": "/daily-zhihu-react/static/js/2.bc47b986.chunk.js.map",
     "static/css/3.0533eb39.chunk.css": "/daily-zhihu-react/static/css/3.0533eb39.chunk.css",
-    "static/js/3.90192494.chunk.js": "/daily-zhihu-react/static/js/3.90192494.chunk.js",
-    "static/js/3.90192494.chunk.js.map": "/daily-zhihu-react/static/js/3.90192494.chunk.js.map",
+    "static/js/3.577a5394.chunk.js": "/daily-zhihu-react/static/js/3.577a5394.chunk.js",
+    "static/js/3.577a5394.chunk.js.map": "/daily-zhihu-react/static/js/3.577a5394.chunk.js.map",
     "index.html": "/daily-zhihu-react/index.html",
-    "precache-manifest.4ee844efeb3eb217ddc3c21b66798e5d.js": "/daily-zhihu-react/precache-manifest.4ee844efeb3eb217ddc3c21b66798e5d.js",
+    "precache-manifest.cc8afca5f2c1683a65f5da0b00adb18a.js": "/daily-zhihu-react/precache-manifest.cc8afca5f2c1683a65f5da0b00adb18a.js",
     "service-worker.js": "/daily-zhihu-react/service-worker.js",
     "static/css/3.0533eb39.chunk.css.map": "/daily-zhihu-react/static/css/3.0533eb39.chunk.css.map",
-    "static/css/main.0010ebf5.chunk.css.map": "/daily-zhihu-react/static/css/main.0010ebf5.chunk.css.map",
+    "static/css/main.adcb5402.chunk.css.map": "/daily-zhihu-react/static/css/main.adcb5402.chunk.css.map",
     "static/media/nodata.svg": "/daily-zhihu-react/static/media/nodata.2d902be2.svg"
   }
 }
