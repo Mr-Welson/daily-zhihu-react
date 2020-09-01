@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
-import Service from "../../service";
 import { formatDate, getLastDate } from "../../utils";
+import Service from "../../service";
 import Banner from "../Banner";
 import ArticleList from "../ArticleList";
 import svgNoData from "../../assets/images/nodata.svg";
