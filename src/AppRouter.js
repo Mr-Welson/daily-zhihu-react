@@ -1,6 +1,7 @@
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from './containers/Home';
+import Loading from "./components/Loading";
 
 
 // React.lazy 和 Suspense 技术还不支持服务端渲染
@@ -13,12 +14,11 @@ const ArticleDetail = lazy(() => import('./containers/ArticleDetail'));
 
 const AppRouter = () => (
   <Router basename="/daily-zhihu-react">
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<Loading />}>
         <Route
           path='/'
           render={props => {
             let style = { display: 'block' };
-            console.log(props);
             if(props.location.pathname !== '/') {
               style.display = 'none'
             }
