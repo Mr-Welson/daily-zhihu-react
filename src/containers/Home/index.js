@@ -70,9 +70,9 @@ const Home = ({ style }) => {
         timer = setTimeout(() => {
           beforeScrollTop = scrollTop;
           loadingData = true;
-          console.time();
+          // console.time();
           getArticleList().then(() => {
-            console.timeEnd();
+            // console.timeEnd();
             loadingData = false;
           });
         }, 0);
